@@ -1,0 +1,49 @@
+/* src/components/Specialties.css */
+
+.specialties-section {
+  padding: 80px 0;
+  background-color: #fceee4;
+}
+
+.specialties-header {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.specialties-title {
+  /* font-family: serif; */
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: #1d1d1d;
+}
+
+.specialties-subtitle {
+  font-size: 1.1rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* This is the container for each individual service */
+.specialty-item {
+  margin-bottom: 40px;
+  /* Adding a subtle transition for a nice hover effect */
+  transition: transform 0.3s ease;
+}
+
+.specialty-item:hover {
+  /* Lifts the item slightly on hover */
+  transform: translateY(-5px);
+}
+
+.specialty-item-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.specialty-item-description {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.7;
+}

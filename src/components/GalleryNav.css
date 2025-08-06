@@ -1,0 +1,22 @@
+/* Styles for the Gallery Navigation bar */
+
+.gallery-nav-section {
+  /* This color is sampled from the orange in your design */
+  background-color: #fca972; 
+  padding: 15px 0; /* Creates the vertical height of the bar */
+  text-align: center;
+}
+
+.gallery-title {
+  font-size: 3rem;  /* Large font size to match the design */
+  font-weight: 500;   /* A medium weight, not too bold */
+  color: #1d1d1d;    /* Dark color for the text */
+  margin: 0;          /* Removes any default margin from the h2 tag */
+}
+
+/* Responsive adjustment for smaller screens */
+@media (max-width: 768px) {
+  .gallery-title {
+    font-size: 2.8rem; /* Make the font slightly smaller on mobile devices */
+  }
+}

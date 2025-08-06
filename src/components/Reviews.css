@@ -1,0 +1,140 @@
+.reviews-section {
+  padding: 80px 0;
+}
+
+.reviews-heading {
+  text-align: center;
+  /* font-family: serif; */
+  font-size: 3rem;
+  font-weight: 500;
+  color: #1d1d1d;
+  margin-bottom: 50px;
+} 
+ 
+/* --- UPDATED: Review Card Styling --- */
+.review-card {
+  background-color: #c57d56;
+  padding: 30px 25px; /* Increased padding slightly */
+  border-radius: 12px; /* Slightly more rounded corners */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center all content */
+  text-align: center;
+  position: relative; /* Needed for the quote icon positioning */
+  overflow: hidden; /* Hides parts of the quote icon that go outside */
+  
+  /* NEW: Adding depth with shadow and transition for hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* NEW: The hover effect to "lift" the card */
+.review-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* --- NEW: Avatar Styling --- */
+.review-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 15px;
+  flex-shrink: 0; /* Prevents avatar from shrinking */
+}
+
+/* --- UPDATED: Reviewer Name Styling --- */
+.reviewer-name {
+  /* font-family: serif; */
+  color: #fdf5f0;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+/* --- UPDATED: Review Text Styling --- */
+/* We no longer need the inner 'review-desc-box' */
+.review-text {
+  border-color: #fca972;
+  /* font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; */
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.85); /* Slightly transparent white text */
+  margin: 0;
+  font-style: italic;
+  line-height: 1.6;
+  position: relative; /* Ensure text stays on top of the quote icon */
+  z-index: 2;
+}
+
+/* --- NEW: Decorative Quote Icon Styling --- */
+.quote-icon {
+  position: absolute;
+  font-size: 8rem; /* Make it large */
+  font-family: serif;
+  color: rgba(255, 255, 255, 0.08); /* Make it very transparent */
+  bottom: -20px; /* Position it at the bottom */
+  right: 10px;
+  z-index: 1; /* Place it behind the text */
+  user-select: none; /* Make it non-selectable */
+}
+
+
+
+/* --- ADDED STYLES FOR NAVIGATION BUTTONS --- */
+
+/* This container centers the button group */
+.review-nav-container {
+  text-align: center;
+  padding-top: 30px; /* Space above the buttons */
+}
+
+/* This is the container for the two stacked buttons */
+.review-nav-buttons {
+  display: inline-block;
+  width: 100%;
+  max-width: 251px; /* Matches the width from your Figma design */
+}
+
+/* Common style for both navigation buttons */
+.btn-review-nav {
+  margin: 5px 0;
+  display: block;
+  width: 100%;
+  padding: 18px 20px;
+  border: none;
+  background-color: #fca972; /* Orange color from the design */
+  color: #1d1d1d;
+  /* font-family: serif; */
+  font-size: 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none; 
+}
+
+.btn-review-nav:hover {
+  background-color: #e8925a;
+}
+ 
+/* Style for the top button: "See All Reviews" */
+#see-all-reviews {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  
+  /* The separator line from your design */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7); 
+}
+
+/* Style for the bottom button: "Add your Review" */
+#add-your-review {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}

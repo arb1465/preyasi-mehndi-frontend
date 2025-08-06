@@ -1,0 +1,4 @@
+White type 01 : #fceee4
+Light skin 02 : rgb(255, 201, 167)
+Light Orange 03 : #fca972
+Dark Orange 04 : #c57d56

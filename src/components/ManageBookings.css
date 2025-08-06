@@ -1,0 +1,51 @@
+/* src/components/ManageBookings.css */
+
+.manage-bookings-container {
+    padding: 100px 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.page-title {
+    /* font-family: serif; */
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+.system-message { 
+    text-align: center; 
+    font-weight: bold; 
+    margin-bottom: 20px;
+}
+.table-responsive {
+    overflow-x: auto; /* Ensures table is scrollable on small screens */
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+tr:hover {
+    background-color: #f9f9f9;
+}
+.btn-delete {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #dc3545;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.btn-delete:hover {
+    background-color: #c82333;
+}

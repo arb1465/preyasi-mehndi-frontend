@@ -1,0 +1,88 @@
+.gallery-page {
+  padding: 120px 0 80px 0; /* Extra padding at the top for the fixed navbar */
+  min-height: 100vh;
+  background-color: #fceee4;
+  background-image: url('../assets/bg-2.png');
+
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.gallery-nav-link {
+  display: block; /* Makes the link fill the parent section */
+  text-decoration: none; /* Removes the default underline */
+  color: inherit; /* Makes the h2 inside keep its original color */
+  transition: background-color 0.3s ease; /* Adds a nice hover effect */
+}
+
+.gallery-nav-link:hover {
+  background-color: #e8925a;
+}
+
+.gallery-header {
+  text-align: center; 
+  margin: 30px 0;
+}
+
+.gallery-main-title {
+  /* font-family: serif; */
+  font-size: 3rem;
+  font-weight: 500;
+  color: #1d1d1d;
+  margin-bottom: 30px;
+}
+
+/* page for the filter buttons */
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.filter-btn {
+  padding: 10px 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+  background-color: #fca972;
+  border-color: #fca972;
+  color: #1d1d1d;
+}
+
+/* This class is applied to the currently active button */
+.filter-btn.active {
+  background-color: #c57d56;
+  border-color: #c57d56;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Styling for each image in the grid */
+.gallery-item {
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  background-color: #c57d56; /* Placeholder color while image loads */
+}
+
+.gallery-image {
+  width: 100%;
+  height: 500px; /* Gives all images a uniform height */
+  object-fit: cover; /* Ensures image covers the area without distortion */
+  transition: transform 0.4s ease;
+}
+
+.gallery-item:hover .gallery-image {
+  transform: scale(1.1); /* A subtle zoom effect on hover */
+}

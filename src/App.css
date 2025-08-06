@@ -1,0 +1,19 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 201, 167);
+  min-height: 100%;
+}
+
+.section-bg {
+  background-color: rgb(255, 201, 167); /* Light peach background from your design */
+  padding-top: 80px;
+}
+
+#root {
+  height: 100%;
+}
+
+.App {
+  text-align: center;
+}

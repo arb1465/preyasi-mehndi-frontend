@@ -1,0 +1,102 @@
+/* Main dark orange footer container */
+.main-footer {
+  background-color: #c57d56; /* Dark brownish-orange from design */
+  color: #fdf5f0; /* Light text color */
+  padding: 60px 0 40px 0;
+  font-family: serif;
+}
+
+.footer-column {
+  margin-bottom: 30px;
+  text-align: left;
+  /* padding-left: 5%; */
+}
+
+.footer-title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+/* Styling for the list of links */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #fdf5f0;
+  text-decoration: none;
+  font-size: 1.1rem;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.footer-links a:hover {
+  opacity: 1;
+}
+
+/* Styling for the center brand name */
+.footer-brand-col {
+  text-align: center;
+  align-self: center; /* Vertically aligns the text in the middle */
+}
+
+.footer-brand-name {
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.footer-brand-link {
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #fdf5f0; /* Match the other footer text */
+  text-decoration: none; /* Remove the underline */
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.footer-brand-link:hover {
+  opacity: 0.8; /* A subtle fade on hover */
+}
+
+/* Styling for the contact address */
+.footer-contact-info {
+  font-style: normal;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  opacity: 0.8;
+}
+
+/* The lighter copyright bar at the bottom */
+.copyright-bar {
+  background-color: #fceee4; /* Light peach color, matching section BGs */
+  color: #444;
+  text-align: center;
+  padding: 15px 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 0.9rem;
+}
+
+.copyright-bar p {
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .footer-column {
+    text-align: center; /* Center all columns on mobile */
+  }
+
+  .footer-brand-name {
+    margin-top: 20px; 
+    margin-bottom: 40px;
+  }
+}

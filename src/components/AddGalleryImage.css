@@ -1,0 +1,71 @@
+/* src/components/AddGalleryImage.css */
+
+.add-gallery-container {
+    padding: 100px 20px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+.page-title {
+    /* font-family: serif; */
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+.gallery-upload-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.form-group {
+    margin-bottom: 25px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+.form-group input[type="text"],
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.file-input-wrapper {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.file-name {
+    font-style: italic;
+    color: #555;
+}
+.btn-submit {
+    margin-top: 40px;
+    width: 40%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fca972;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.btn-submit:disabled {
+    background-color: #ccc;
+}
+.btn-submit:hover {
+    background-color: #fca972;
+}
+.system-message { 
+    text-align: center; 
+    font-weight: bold; 
+    margin-top: 20px; 
+}

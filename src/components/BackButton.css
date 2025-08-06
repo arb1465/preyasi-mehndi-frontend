@@ -1,0 +1,30 @@
+/* src/components/BackButton.css */
+
+.back-button-container {
+    /* Pushes the button to the center and adds space above it */
+    display: flex;
+    justify-content: center;
+    margin-top: 40px; /* Adjust as needed */
+    padding-bottom: 40px; /* Ensures space at the very bottom */
+}
+
+.back-button {
+    background-color: #fca972; /* A neutral gray color */
+    color: #1d1d1d;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px; /* Space between arrow and text */
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(197, 125, 86, 0.5);
+}
+
+.back-button:hover {
+    background-color: #c57d56;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(197, 125, 86, 0.5);
+}

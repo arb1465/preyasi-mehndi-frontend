@@ -1,0 +1,52 @@
+.custom-navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  /* transition: background-color 0.3s ease; */
+  padding: 0.8rem 1rem;
+}
+
+.custom-navbar.navbar-scrolled {
+  background-color: rgb(255, 201, 167); /* Your scroll background */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.custom-logo {
+  font-weight: bold;
+  font-size: 1.7rem;
+  color: black;
+}
+
+.custom-nav-items {
+  gap: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.custom-nav-items .nav-link {
+  color: black;
+  font-weight: 500;
+  font-size: 1.05rem;
+  padding: 0 15px;
+  transition: color 0.3s;
+}
+
+.custom-nav-items .nav-link:hover {
+  color: #ffffff;
+  cursor: pointer;
+  scale: 1.2;
+}
+
+.insta-logo {
+  width: 35px;
+  height: 35px;
+  margin-left: 15px;
+  border-radius: 8px;
+}
