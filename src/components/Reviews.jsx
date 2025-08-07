@@ -11,7 +11,7 @@ function Reviews() {
     useEffect(() => {
         const fetchApprovedReviews = async () => {
             try {
-                const response = await fetch(`${apiUrl}/`);
+                const response = await fetch(`${apiUrl}/reviews`);
                 if (!response.ok) {
                     throw new Error('Failed to fetch reviews.');
                 }
@@ -64,7 +64,7 @@ function Reviews() {
                         <Link to="/all-reviews" className="btn-review-nav" id="see-all-reviews">
                             See All Reviews
                         </Link>
-                        <Link to="/add-review" className="btn-review-nav" id="add-your-review">
+                        <Link to="/reviews" className="btn-review-nav" id="add-your-review">
                             Add your Review
                         </Link>
                     </div>

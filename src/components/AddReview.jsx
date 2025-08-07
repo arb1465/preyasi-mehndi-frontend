@@ -63,7 +63,7 @@ function AddReviewPage() {
     
     try {
       console.log("Fetching review data..");
-      const response = await fetch(`${apiUrl}/add-review/submit`, {
+      const response = await fetch(`${apiUrl}/reviews`, {
           method: 'POST',
           body: reviewFormData,
       });

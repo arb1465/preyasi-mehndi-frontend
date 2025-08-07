@@ -44,7 +44,7 @@ function App() {
           
           <Route path="/gallery" element={<GalleryPage />} />
 
-          <Route path="/add-review" element={<AddReviewPage />} />
+          <Route path="/reviews" element={<AddReviewPage />} />
 
           <Route path="/all-reviews" element={<AllReviews />} />
         </Routes>
