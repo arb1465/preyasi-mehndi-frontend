@@ -62,6 +62,7 @@ function AddReviewPage() {
     }
     
     try {
+      console.log("Fetching review data..");
       const response = await fetch(`${apiUrl}/add-review/submit`, {
           method: 'POST',
           body: reviewFormData,
@@ -69,6 +70,7 @@ function AddReviewPage() {
 
       const result = await response.json();
 
+      console.log("Json response is reviced (correct or incorrect)")
       if (!response.ok) {
         throw new Error(result.message || 'Something went wrong while submitting.');
       }

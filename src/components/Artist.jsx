@@ -16,9 +16,7 @@ function Artist() {
               <h3 className="artist-name">Payal Chauhan</h3>
 
               <div className="desc-box">
-                <p>
-                  This is where the description of the artist will go. You can write a few paragraphs here about your passion for mehendi, your experience, and what makes your art special. This text is inside the light grey placeholder.
-                </p>
+                <p>I’m a passionate Mehendi artist with a love for blending tradition and creativity. What began as a hobby soon turned into a deep-rooted passion, allowing me to bring joy and beauty to countless hands. With years of experience, I specialize in crafting elegant, customized designs for every occasion — from weddings to festivals. Every pattern I create is unique, detailed, and made with care using natural, skin-safe henna.</p>
               </div>
             </div>
           </div>

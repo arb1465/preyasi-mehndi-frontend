@@ -90,13 +90,42 @@
 }
 
 /* Responsive adjustments */
-@media (max-width: 767px) {
-  .footer-column {
-    text-align: center; /* Center all columns on mobile */
-  }
+@media (max-width: 991.98px) {
 
-  .footer-brand-name {
-    margin-top: 20px; 
-    margin-bottom: 40px;
-  }
+    /* Target the main footer area */
+    .main-footer {
+        /* Reduce padding on top and bottom for a tighter look on mobile */
+        padding: 40px 0 20px 0; 
+    }
+
+    /* Target each column in the footer */
+    .footer-column {
+        /* This is the most important rule: center the text inside each column */
+        text-align: center; 
+        
+        /* Add some space below each column when they are stacked */
+        margin-bottom: 40px; 
+    }
+
+    /* Target the middle column with the brand name */
+    .footer-brand-col {
+        /* On mobile, we want the brand name to be in the natural order.
+           We can remove the specific vertical alignment for mobile. */
+        align-self: auto; 
+    }
+
+    /* Adjust the font size of the main brand name for mobile */
+    .footer-brand-name {
+        font-size: 2.5rem; /* Make it slightly smaller */
+    }
+
+    /* Adjust the titles for each section */
+    .footer-title {
+        font-size: 1.5rem;
+    }
+
+    /* The copyright bar text can be made slightly smaller too */
+    .copyright-bar {
+        font-size: 0.8rem;
+    }
 }

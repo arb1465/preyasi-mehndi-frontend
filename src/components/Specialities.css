@@ -47,3 +47,9 @@
   color: #444;
   line-height: 1.7;
 }
+
+@media (max-width: 991.98px) {
+  .specialties-title {
+    font-size: 2.5rem;
+  }
+}

@@ -1,5 +1,4 @@
 
-
 .hero-container {
   padding-top: 80px; /* Match navbar height */
   position: relative;
@@ -70,4 +69,36 @@
 
 #request-to-book {
   border-radius: 8px;
+}
+
+/* --- Mobile Responsive Styles for Hero --- */
+@media (max-width: 991.98px) {
+
+    /* On mobile, we want to center the content */
+    .hero-content {
+        display: grid;
+        place-items: center;
+        position: relative;
+        z-index: 2;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        text-align: center;
+        padding: 150px 20px 0 20px; 
+    }
+
+    .hero-content h1 {
+        font-size: 2.3rem; /* Reduce the font size for smaller screens */
+    }
+
+    .hero-container::after {
+        left: 0;
+        width: 100%;
+        background: linear-gradient(to top, rgba(255, 201, 167, 0.1) 0%, rgb(255, 201, 167) 95%);
+    }
+
+    .hero-content .btn-review-nav {
+      font-size: 1rem;
+    }
 }

@@ -92,15 +92,16 @@
 
 /* This container centers the button group */
 .review-nav-container {
-  text-align: center;
-  padding-top: 30px; /* Space above the buttons */
+  margin-top: 70px;
+  display: flex;
+  justify-content: center; /* Space above the buttons */
 }
 
 /* This is the container for the two stacked buttons */
 .review-nav-buttons {
   display: inline-block;
   width: 100%;
-  max-width: 251px; /* Matches the width from your Figma design */
+  max-width: 230px; 
 }
 
 /* Common style for both navigation buttons */
@@ -111,9 +112,9 @@
   padding: 18px 20px;
   border: none;
   background-color: #fca972; /* Orange color from the design */
-  color: #1d1d1d;
+  color: #1d1d1d; 
   /* font-family: serif; */
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 500;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -137,4 +138,21 @@
 #add-your-review {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+}
+
+
+@media (max-width: 991.98px) {
+  .reviews-heading {
+    font-size: 1.8rem;
+  }
+
+  .btn-review-nav {
+    font-size: 1rem;
+    padding: 15px;
+  }
+
+  .review-nav-buttons {
+    max-width: 180px; 
+  }
+
 }

@@ -50,3 +50,34 @@
   margin-left: 15px;
   border-radius: 8px;
 }
+
+@media (max-width: 991.98px) {
+  
+    .navbar-brand {
+      font-size: 1.3rem;
+    }
+
+    /* Style the container for the collapsed menu items */
+    .navbar-collapse {
+        margin-top: 15px; /* Add some space below the hamburger button */
+        background-color: rgba(255, 201, 167, 0.95); /* Use your scrolled-nav color, but slightly transparent */
+        backdrop-filter: blur(5px); /* Adds a modern frosted glass effect */
+        border-radius: 8px;
+        padding: 20px;
+    }
+
+    .custom-nav-items {
+        flex-direction: column; 
+        align-items: center; 
+        gap: 25px;
+    }
+
+    .custom-nav-items .nav-link {
+        padding: 0; /* Remove horizontal padding on mobile */
+        font-size: 1.2rem; /* Make the links a bit bigger and easier to tap */
+    }
+
+    .insta-logo {
+        margin-left: 0; /* Remove the left margin for the logo on mobile */
+    }
+}

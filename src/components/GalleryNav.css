@@ -15,8 +15,8 @@
 }
 
 /* Responsive adjustment for smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .gallery-title {
-    font-size: 2.8rem; /* Make the font slightly smaller on mobile devices */
+    font-size: 1.8rem; /* Make the font slightly smaller on mobile devices */
   }
 }

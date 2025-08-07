@@ -2,7 +2,7 @@
 
 .add-gallery-container {
     padding: 100px 20px;
-    max-width: 700px;
+    max-width: 600px;
     margin: 0 auto;
 }
 .page-title {
@@ -13,7 +13,7 @@
 }
 .gallery-upload-form {
     background-color: #fff;
-    padding: 30px;
+    padding: 40px;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
@@ -40,6 +40,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    width: 100%;
+    text-align: center;
 }
 .file-name {
     font-style: italic;
@@ -69,3 +72,9 @@
     font-weight: bold; 
     margin-top: 20px; 
 }
+
+@media (max-width: 991.98px) {
+    .page-title{
+        font-size: 2rem;
+    }
+} 

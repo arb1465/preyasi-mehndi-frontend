@@ -1,6 +1,6 @@
 // src/components/AdminDashboard.jsx
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import './AdminDashboard.css';
 
@@ -12,36 +12,44 @@ function AdminDashboard() {
     const [bookingCount, setBookingCount] = useState(0);
 
     const navigate = useNavigate();
+    const handleLogout = useCallback(() => {
+        localStorage.removeItem('admin_token');
+        navigate('/admin-ak47');
+    }, [navigate]); // The dependency is navigate
 
-    // This effect runs once when the component loads
     useEffect(() => {
+        const token = localStorage.getItem('admin_token');
+
         const fetchData = async () => {
+            const headers = { 'Authorization': `Bearer ${token}` };
             try {
-                // Fetch the count of pending reviews
-                const reviewsResponse = await fetch(`${apiUrl}/reviews/pending/count`);
+                // Use the apiUrl variable
+                const reviewsResponse = await fetch(`${apiUrl}/admin-ak47/reviews/pending/count`, { headers });
                 const reviewsData = await reviewsResponse.json();
                 if (reviewsResponse.ok) setReviewCount(reviewsData.count);
 
-                // Fetch the count of booking requests
-                const bookingsResponse = await fetch(`${apiUrl}/bookings/count`);
+                // Use the apiUrl variable
+                const bookingsResponse = await fetch(`${apiUrl}/admin-ak47/bookings/count`, { headers });
                 const bookingsData = await bookingsResponse.json();
                 if (bookingsResponse.ok) setBookingCount(bookingsData.count);
 
-            } catch (error) {
+            } 
+            catch (error) {
                 console.error("Error fetching dashboard data:", error);
+                // Call the stable handleLogout function
+                handleLogout(); 
             }
         };
 
-        fetchData();
-    }, []);
+        if (token) {
+            fetchData();
+        } else {
+            console.log("No token found, redirecting to login.");
+            navigate('/admin-ak47');
+        }
+        // 3. Add handleLogout to the dependency array
+    }, [navigate, handleLogout]); 
 
-    // Function to handle logout
-    const handleLogout = () => {
-        // Remove the token from local storage
-        localStorage.removeItem('admin_token');
-        // Redirect to the login page
-        navigate('/');
-    };
 
     return (
         <div className="admin-dashboard-container section-bg">
@@ -51,7 +59,7 @@ function AdminDashboard() {
             
             <div className="container">
                 <div className="dashboard-header-text">
-                    <h1 className="main-title">Preyasi Mehendi Art Gallery</h1>
+                    <h1 className="main-title">Preyasi Mehndi Art Gallery</h1>
                     <h2 className="sub-title">Admin Dashboard</h2>
                 </div>
 

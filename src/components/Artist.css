@@ -32,7 +32,7 @@
 .desc-box {
   background-color: #fceee4;
   padding: 25px;
-  height: 200px;
+  height: auto;
   border-radius: 8px;
 }
 
@@ -63,9 +63,19 @@
 /* Responsive styles for smaller screens */
 @media (max-width: 991px) {
   .artist-text-content {
+    text-align: center;
     margin-bottom: 40px;
   }
+  .artist-text-content .section-subtitle {
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+  }
   .artist-text-content .artist-name {
-    font-size: 2.8rem;
+    font-size: 2.6rem;
+  }
+
+  .artist-image-placeholder{
+    margin: 0 0;
+    width: 100%;
   }
 }

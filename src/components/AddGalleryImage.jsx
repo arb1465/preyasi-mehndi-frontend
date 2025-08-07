@@ -85,7 +85,7 @@ function AddGalleryImage() {
                 <div className="form-group">
                     <label htmlFor="category">Category</label>
                     <select id="category" value={category} onChange={e => setCategory(e.target.value)} required>
-                        <option value="hand">All</option>
+                        <option value="all">All</option>
                         <option value="hand">Hand</option>
                         <option value="feet">Feet</option>
                     </select>

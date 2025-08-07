@@ -54,7 +54,7 @@ function ManageReviewsPage() {
         const token = localStorage.getItem('admin_token');
 
         try {
-            const response = await fetch(`${apiUrl}/admin-ak47/reviews/approve/${reviewId}`, {
+            const response = await fetch(`${apiUrl}/admin-ak47/manage-reviews/approve/${reviewId}`, {
                 method: 'PATCH',
                 headers: { 'Authorization': `Bearer ${token}` }
             });

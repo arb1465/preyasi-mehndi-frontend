@@ -125,3 +125,13 @@
   color: #fff;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
+
+@media (max-width: 767.98px) {
+  .review-form-main-title{
+    font-size: 2rem;
+  }
+  .btn-submit{
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
