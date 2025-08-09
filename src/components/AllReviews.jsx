@@ -11,7 +11,7 @@ function AllReviews() {
         const fetchApprovedReviews = async () => {
             try {
                 // It calls the exact same backend endpoint!
-                const response = await fetch(`${apiUrl}/`);
+                const response = await fetch(`${apiUrl}/reviews`);
                 if (!response.ok) throw new Error('Failed to fetch reviews.');
                 const data = await response.json();
                 setReviews(data);

@@ -56,8 +56,13 @@ function ManageReviewsPage() {
         try {
             const response = await fetch(`${apiUrl}/admin-ak47/manage-reviews/approve/${reviewId}`, {
                 method: 'PATCH',
-                headers: { 'Authorization': `Bearer ${token}` }
+                headers: { 
+                    'Authorization': `Bearer ${token}`,
+                    'Content-Type': 'application/json' 
+                },
+                body: JSON.stringify({})
             });
+            
             const result = await response.json();
             if (!response.ok) throw new Error(result.error);
             
