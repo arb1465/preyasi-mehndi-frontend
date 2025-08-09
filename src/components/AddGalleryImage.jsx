@@ -75,9 +75,15 @@ function AddGalleryImage() {
 
             <form onSubmit={handleSubmit} className="gallery-upload-form">
                 <div className="form-group">
-                    <label htmlFor="imageFile">Select Image</label>
                     <div className="file-input-wrapper">
-                        <input type="file" id="imageFile" onChange={handleFileChange} accept="image/*" required />
+                        <label htmlFor="imageFile">Choose File</label>
+                        <input
+                            type="file"
+                            id="imageFile"
+                            onChange={handleFileChange}
+                            accept="image/*"
+                            required
+                        />
                         <span className="file-name">{fileName}</span>
                     </div>
                 </div>

@@ -43,7 +43,25 @@
     position: relative;
     width: 100%;
     text-align: center;
+    gap:10px
 }
+.file-input-wrapper label {
+  background-color: #f7a07e;
+  color: #555;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.file-input-wrapper input[type="file"] {
+  display: none;
+}
+.file-input-wrapper .file-name {
+  font-size: 14px;
+  color: #555;
+}
+
 .file-name {
     font-style: italic;
     color: #555;
