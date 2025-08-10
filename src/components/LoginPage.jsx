@@ -75,7 +75,7 @@ function LoginPage() {
                     <div className="form-group">
                         <label htmlFor="password">Password</label>
                         <input
-                            type="password"
+                            type="text"
                             id="password"
                             className="form-control"
                             value={password}
