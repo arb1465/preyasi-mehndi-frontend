@@ -14,7 +14,7 @@ function AdminDashboard() {
     const navigate = useNavigate();
     const handleLogout = useCallback(() => {
         localStorage.removeItem('admin_token');
-        navigate('/admin-ak47');
+        navigate('/');
     }, [navigate]); // The dependency is navigate
 
     useEffect(() => {
@@ -45,7 +45,7 @@ function AdminDashboard() {
             fetchData();
         } else {
             console.log("No token found, redirecting to login.");
-            navigate('/admin-ak47');
+            navigate('/');
         }
         // 3. Add handleLogout to the dependency array
     }, [navigate, handleLogout]); 
