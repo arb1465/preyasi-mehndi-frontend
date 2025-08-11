@@ -95,7 +95,7 @@ function AddReviewPage() {
     <div className="add-review-page">
       <div className="container">
         <div className="review-form-header">
-          <h1 className="review-form-main-title">Preyasi Mehendi Art Gallery</h1>
+          <h1 className="review-form-main-title">Preyasi Mehndi</h1>
           <h2 className="review-form-sub-title">Add your review</h2>
         </div>
 

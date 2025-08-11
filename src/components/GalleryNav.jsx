@@ -9,6 +9,7 @@ function GalleryNav() {
       <Link to="/gallery" className="gallery-nav-link">
         <div className="container">
           <h2 className="gallery-title">Gallery</h2>
+          <p id='tapToView'>(Tap to view)</p>
         </div>
       </Link>
     </section>

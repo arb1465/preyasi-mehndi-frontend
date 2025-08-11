@@ -15,6 +15,7 @@ function Hero() {
 
       <div className="hero-content">
         <h1>Mehndi By Preyasi</h1>
+        <p>Decorate your Hands with our Latest Collection of Designer Mehndi</p>
         <RouterLink to="/booking" className="btn-review-nav" id="request-to-book">
               Request for book
         </RouterLink>

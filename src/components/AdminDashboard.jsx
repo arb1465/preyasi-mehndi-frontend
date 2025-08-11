@@ -59,7 +59,7 @@ function AdminDashboard() {
             
             <div className="container">
                 <div className="dashboard-header-text">
-                    <h1 className="main-title">Preyasi Mehndi Art Gallery</h1>
+                    <h1 className="main-title">Preyasi Mehndi</h1>
                     <h2 className="sub-title">Admin Dashboard</h2>
                 </div>
 

@@ -58,7 +58,7 @@ function GalleryPage() {
     <div className="gallery-page-container section-bg">
       <div className="container">
         <div className="gallery-header">
-          <h1 className="gallery-main-title">Preyasi Mehendi Art Gallery</h1>
+          <h1 className="gallery-main-title">Preyasi Mehndi</h1>
           <div className="filter-buttons">
             <button className={`filter-btn ${activeFilter === 'all' ? 'active' : ''}`} onClick={() => setActiveFilter('all')}>All</button>
             <button className={`filter-btn ${activeFilter === 'hand' ? 'active' : ''}`} onClick={() => setActiveFilter('hand')}>Hand</button>

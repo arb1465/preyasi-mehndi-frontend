@@ -45,6 +45,12 @@
   font-size: 48px;
   font-weight: 700;
 }
+ 
+.hero-content p {
+  font-size: 23px;
+  padding-top: 15px;
+  font-weight: 400;
+}
 
 .hero-content .btn-review-nav {
   margin: 25px 0;
@@ -85,7 +91,7 @@
         margin-right: auto;
 
         text-align: center;
-        padding: 200px 20px 0 20px; 
+        padding: 150px 20px 0 20px; 
     }
 
     .hero-content h1 {
@@ -95,7 +101,7 @@
     .hero-container::after {
         left: 0;
         width: 100%;
-        background: linear-gradient(to top, rgba(255, 201, 167, 0.1) 0%, rgb(255, 201, 167) 95%);
+        background: linear-gradient(to top, rgba(255, 201, 167, 0.1) 0%, rgb(255, 201, 167) 85%);
     }
 
     .hero-content .btn-review-nav {

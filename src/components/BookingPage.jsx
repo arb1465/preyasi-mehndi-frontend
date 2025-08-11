@@ -81,7 +81,7 @@ function BookingPage() {
         <section id="booking" className="booking-page-container">
                 <div className="container">
                     <div className="booking-form-header">
-                        <h1 className="booking-main-title">Preyasi Mehendi Art Gallery</h1>
+                        <h1 className="booking-main-title">Preyasi Mehndi</h1>
                         <h2 className="booking-sub-title">Request to book</h2>
                     </div>
 

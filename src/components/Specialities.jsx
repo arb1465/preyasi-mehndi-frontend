@@ -1,5 +1,5 @@
 import React from 'react';
-import './Specialities.css'; // We'll create this CSS file next
+import './Specialities.css';
 
 const specialitiesData = [
   {

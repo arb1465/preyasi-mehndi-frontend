@@ -55,7 +55,7 @@ function LoginPage() {
         <div className="login-page-container section-bg">
             <div className="login-form-wrapper">
                 <div className="login-form-header">
-                    <h1 id='heading'>Preyasi Mehndi Art</h1>
+                    <h1 id='heading'>Preyasi Mehndi</h1>
                     <h2 className="login-sub-title">Login</h2>
                 </div>
 
