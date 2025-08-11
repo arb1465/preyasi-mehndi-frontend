@@ -49,7 +49,7 @@ function Footer() {
             <div className="col-lg-4 col-md-12 footer-column">
               <h5 className="footer-title">Contact Us</h5>
               <address className="footer-contact-info">
-                Street-2,Nehru-Nagar road<br/>
+                Street-3, Nehru-Nagar road<br/>
                 Behind Silver Heights Building, Maldhari Chowk,<br></br> Nana Mava Road, Rajkot - 360004<br/>
                 +91 84697 52853
               </address>
