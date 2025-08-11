@@ -30,7 +30,7 @@ function Navbar() {
     return (
         <nav className={`custom-navbar navbar navbar-expand-lg ${scrolled ? "navbar-scrolled" : ""}`}>
             <div className="container">
-                <RouterLink className="navbar-brand custom-logo" to="/">Preyasi Mehendi</RouterLink>
+                <RouterLink className="navbar-brand custom-logo" to="/">Preyasi Mehndi</RouterLink>
                 
                 <button
                     ref={navTogglerRef}

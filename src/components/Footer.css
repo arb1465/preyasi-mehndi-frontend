@@ -116,7 +116,7 @@
 
     /* Adjust the font size of the main brand name for mobile */
     .footer-brand-name {
-        font-size: 2.5rem; /* Make it slightly smaller */
+        font-size: 2rem; /* Make it slightly smaller */
     }
 
     /* Adjust the titles for each section */
