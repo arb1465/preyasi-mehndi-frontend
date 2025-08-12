@@ -4,7 +4,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './ManageReviews.css';
 import BackButton from './BackButton';
-
+import { Link } from 'react-router-dom';
 
 const apiUrl = process.env.REACT_APP_API_URL;
 
@@ -136,7 +136,10 @@ function ManageReviewsPage() {
 
     return (
         <div className="manage-reviews-container">
-            <h1 className="page-title">Manage Pending Reviews</h1>
+            
+            <Link to="/admin-ak47/dashboard" className="page-title-link">
+                <h1 className="page-title">Manage Pending Reviews</h1>
+            </Link>
             {message && <p className="system-message">{message}</p>}
 
             <div className="reviews-list">

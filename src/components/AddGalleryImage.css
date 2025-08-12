@@ -1,9 +1,16 @@
-/* src/components/AddGalleryImage.css */
 
 .add-gallery-container {
     padding: 100px 20px;
-    max-width: 600px;
     margin: 0 auto;
+    
+    background-color: #fceee4;
+    background-image: url('../assets/bg-4.jpg');
+
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    background-size: cover;
+    background-attachment: fixed;
 }
 .page-title {
     /* font-family: serif; */
@@ -11,7 +18,10 @@
     font-size: 2.5rem;
     margin-bottom: 40px;
 }
+
 .gallery-upload-form {
+    width: 600px;
+    justify-self: center;
     background-color: #fff;
     padding: 40px;
     border-radius: 12px;

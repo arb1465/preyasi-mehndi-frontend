@@ -1,9 +1,18 @@
 /* src/components/ManageReviews.css */
 .manage-reviews-container {
     padding: 100px 20px;
-    max-width: 1200px;
     margin: 0 auto;
     margin-bottom: 30px;
+    max-width: 1840px;
+    
+  background-color: #fceee4;
+  background-image: url('../assets/bg-4.jpg');
+
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .page-title {
@@ -153,3 +162,8 @@
     border-radius: 10px;
     padding: 10px 15px;
 } 
+
+.page-title-link{
+    text-decoration: none;
+    color: #1d1d1d;
+}

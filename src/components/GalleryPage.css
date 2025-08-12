@@ -29,7 +29,7 @@
 
 .gallery-main-title {
   /* font-family: serif; */
-  font-size: 3rem;
+  font-size: 3.rem;
   font-weight: 500;
   color: #1d1d1d;
   margin-bottom: 30px;
@@ -78,11 +78,73 @@
 
 .gallery-image {
   width: 100%;
-  height: 400px; /* Gives all images a uniform height */
+  height: 420px; /* Gives all images a uniform height */
   object-fit: cover; /* Ensures image covers the area without distortion */
   transition: transform 0.4s ease;
 }
 
 .gallery-item:hover .gallery-image {
   transform: scale(1.1); /* A subtle zoom effect on hover */
+}
+
+/* Make the gallery items clickable */
+.gallery-item {
+    cursor: pointer;
+    overflow: hidden; /* Keep the hover effect contained */
+}
+
+/* The full-screen, semi-transparent background */
+.zoom-overlay {
+    position: fixed; /* Covers the entire viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85); /* Black with 85% opacity */
+    
+    /* Use grid to perfectly center the zoomed image */
+    display: grid;
+    place-items: center;
+
+    z-index: 1050; /* Ensure it's on top of everything else (like the navbar) */
+    cursor: pointer; /* Indicates the overlay is clickable to close */
+    
+    /* Add a subtle fade-in animation */
+    animation: fadeIn 0.3s ease;
+}
+
+/* The zoomed image itself */
+.zoomed-image {
+    max-width: 90vw;  /* 90% of viewport width */
+    max-height: 90vh; /* 90% of viewport height */
+    
+    object-fit: contain;
+    border-radius: 5px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.5);
+
+    /* Add a subtle zoom-in animation */
+    animation: zoomIn 0.3s ease;
+}
+
+/* Keyframe animations for a smooth effect */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.8); }
+    to { transform: scale(1); }
+}
+
+@media (max-width: 791.98px) {
+  .filter-buttons {
+    display: grid;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .gallery-main-title {
+    font-size: 2rem;
+  }
 }

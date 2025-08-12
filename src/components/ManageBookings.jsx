@@ -1,7 +1,6 @@
-// src/components/ManageBookings.jsx
-
 import React, { useState, useEffect } from 'react';
 import './ManageBookings.css'; // We'll create this CSS next
+import { Link } from 'react-router-dom';
 import BackButton from './BackButton';
 
 const apiUrl = process.env.REACT_APP_API_URL;
@@ -58,7 +57,10 @@ function ManageBookings() {
 
     return (
         <div className="manage-bookings-container">
-            <h1 className="page-title">Manage Booking Requests</h1>
+            
+            <Link to="/admin-ak47/dashboard" className="page-title-link">
+                <h1 className="page-title">Manage Booking Requests</h1>
+            </Link>
             {message && <p className="system-message">{message}</p>}
 
             <div className="table-responsive">

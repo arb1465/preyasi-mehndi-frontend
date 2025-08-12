@@ -12,6 +12,8 @@ function GalleryPage() {
 
   const [isLoading, setIsLoading] = useState(true);
 
+  const [zoomedImage, setZoomedImage] = useState(null);
+
   useEffect(() => {
     const fetchGalleryImages = async () => {
       try {
@@ -48,6 +50,13 @@ function GalleryPage() {
   },
     [activeFilter, allImages]);
 
+  const handleImageClick = (imageUrl) => {
+    setZoomedImage(imageUrl);
+  };
+
+  const handleCloseZoom = () => {
+    setZoomedImage(null);
+  };
 
   // --- RENDER LOGIC ---
   if (isLoading) {
@@ -61,9 +70,9 @@ function GalleryPage() {
           <h1 className="gallery-main-title">Preyasi Mehndi Art Gallery</h1>
           <div className="filter-buttons">
             <button className={`filter-btn ${activeFilter === 'all' ? 'active' : ''}`} onClick={() => setActiveFilter('all')}>All</button>
+            <button className={`filter-btn ${activeFilter === 'simple' ? 'active' : ''}`} onClick={() => setActiveFilter('simple')}>Simple</button>
             <button className={`filter-btn ${activeFilter === 'bridal' ? 'active' : ''}`} onClick={() => setActiveFilter('bridal')}>Bridal</button>
             <button className={`filter-btn ${activeFilter === 'engagement' ? 'active' : ''}`} onClick={() => setActiveFilter('engagement')}>Engagement</button>
-            <button className={`filter-btn ${activeFilter === 'simple' ? 'active' : ''}`} onClick={() => setActiveFilter('simple')}>Simple</button>
             <button className={`filter-btn ${activeFilter === 'stylish' ? 'active' : ''}`} onClick={() => setActiveFilter('stylish')}>Stylish</button>
           </div>
         </div>
@@ -71,10 +80,8 @@ function GalleryPage() {
         <div className="row">
           {filteredImages.length > 0 ? (
             filteredImages.map(image => (
-              // Use the unique _id from MongoDB as the key
               <div className="col-lg-4 col-md-6 mb-4" key={image._id}>
-                <div className="gallery-item">
-                  {/* Use the imageUrl and altText from the database */}
+                <div className="gallery-item" onClick={() => handleImageClick(image.imageUrl)}>
                   <img
                     src={image.imageUrl}
                     alt={image.altText}
@@ -88,6 +95,12 @@ function GalleryPage() {
           )}
         </div>
       </div>
+
+      {zoomedImage && (
+        <div className="zoom-overlay" onClick={handleCloseZoom}>
+          <img src={zoomedImage} alt="Zoomed in mehendi design" className="zoomed-image" />
+        </div>
+      )}
     </div>
   );
 }

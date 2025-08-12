@@ -1,19 +1,17 @@
-/* src/components/ManageBookings.css */
 
-.manage-bookings-container {
+.manage-gallery-container {
     padding: 100px 20px;
     margin: 0 auto;
-    
-    background-color: #fceee4;
-    background-image: url('../assets/bg-4.jpg');
 
-    background-repeat: no-repeat;
-    background-position: center center;
+  background-color: #fceee4;
+  background-image: url('../assets/bg-4.jpg');
 
-    background-size: cover;
-    background-attachment: fixed;
-    
-    max-width: 1700px;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  background-size: cover;
+  background-attachment: fixed;
+
 }
 .page-title {
     /* font-family: serif; */
@@ -27,13 +25,15 @@
     margin-bottom: 20px;
 }
 .table-responsive {
+    
     overflow-x: auto; /* Ensures table is scrollable on small screens */
 }
 table {
+    width: 70%;
+    justify-self: center;
     border-collapse: collapse;
     background-color: #fff;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    text-align: center;
 }
 th, td {
     padding: 15px;
@@ -47,17 +47,37 @@ th {
 tr:hover {
     background-color: #f9f9f9;
 }
-.btn-delete {
+.btn-add {
     padding: 8px 15px;
     border: none;
     border-radius: 5px;
-    background-color: #dc3545;
+    background-color: #35dc51;
     color: white;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-.btn-delete:hover {
-    background-color: #c82333;
+.btn-add:hover {
+    background-color: #65e77d;
+}
+
+.btn-remove {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #d01e1e;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.btn-remove:hover {
+    background-color: #d74c4c;
+}
+
+#photoHere{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
 }
 
 .page-title-link{

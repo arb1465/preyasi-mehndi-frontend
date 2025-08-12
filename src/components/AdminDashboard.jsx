@@ -74,6 +74,9 @@ function AdminDashboard() {
                     <Link to="/admin-ak47/add-gallery-image" className="nav-button">
                         Add Gallery Image
                     </Link>
+                    <Link to="/admin-ak47/manage-gallery" className="nav-button">
+                        Manage Gallery
+                    </Link>
                 </div>
             </div>
         </div>

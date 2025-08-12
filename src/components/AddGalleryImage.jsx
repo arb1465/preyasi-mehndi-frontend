@@ -1,8 +1,7 @@
-// src/components/AddGalleryImage.jsx
-
 import React, { useState } from 'react';
 import './AddGalleryImage.css'; // We'll create this CSS
 import BackButton from './BackButton';
+import { Link } from 'react-router-dom';
 
 const apiUrl = process.env.REACT_APP_API_URL;
 
@@ -71,45 +70,48 @@ function AddGalleryImage() {
 
     return (
         <div className="add-gallery-container">
-            <h1 className="page-title">Add New Image to Gallery</h1>
-
-            <form onSubmit={handleSubmit} className="gallery-upload-form">
-                <div className="form-group">
-                    <div className="file-input-wrapper">
-                        <label htmlFor="imageFile">Choose File</label>
-                        <input
-                            type="file"
-                            id="imageFile"
-                            onChange={handleFileChange}
-                            accept="image/*"
-                            required
-                        />
-                        <span className="file-name">{fileName}</span>
+            
+            <Link to="/admin-ak47/dashboard" className="page-title-link">
+                <h1 className="page-title">Add New Image to Gallery</h1>
+            </Link>
+            
+                <form onSubmit={handleSubmit} className="gallery-upload-form">
+                    <div className="form-group">
+                        <div className="file-input-wrapper">
+                            <label htmlFor="imageFile">Choose File</label>
+                            <input
+                                type="file"
+                                id="imageFile"
+                                onChange={handleFileChange}
+                                accept="image/*"
+                                required
+                            />
+                            <span className="file-name">{fileName}</span>
+                        </div>
                     </div>
-                </div>
 
-                <div className="form-group">
-                    <label htmlFor="category">Category</label>
-                    <select id="category" value={category} onChange={e => setCategory(e.target.value)} required>
-                        <option value="all">Other</option>
-                        <option value="bridal">Bridal</option>
-                        <option value="engagement">Engagement</option>
-                        <option value="simple">Simple</option>
-                        <option value="stylish">Stylish</option>
-                    </select>
-                </div>
+                    <div className="form-group">
+                        <label htmlFor="category">Category</label>
+                        <select id="category" value={category} onChange={e => setCategory(e.target.value)} required>
+                            <option value="all">Other</option>
+                            <option value="bridal">Bridal</option>
+                            <option value="engagement">Engagement</option>
+                            <option value="simple">Simple</option>
+                            <option value="stylish">Stylish</option>
+                        </select>
+                    </div>
 
-                <div className="form-group">
-                    <label htmlFor="altText">Alt Text (Description for SEO)</label>
-                    <input type="text" id="altText" value={altText} onChange={e => setAltText(e.target.value)} placeholder="e.g., Intricate bridal design on hand" />
-                </div>
+                    <div className="form-group">
+                        <label htmlFor="altText">Alt Text (Description for SEO)</label>
+                        <input type="text" id="altText" value={altText} onChange={e => setAltText(e.target.value)} placeholder="e.g., Intricate bridal design on hand" />
+                    </div>
 
-                <button type="submit" className="btn-submit" disabled={isSubmitting}>
-                    {isSubmitting ? 'Uploading...' : 'Upload to Gallery'}
-                </button>
+                    <button type="submit" className="btn-submit" disabled={isSubmitting}>
+                        {isSubmitting ? 'Uploading...' : 'Upload to Gallery'}
+                    </button>
 
-                {message && <p className="system-message">{message}</p>}
-            </form>
+                    {message && <p className="system-message">{message}</p>}
+                </form>
 
             <BackButton />
         </div>

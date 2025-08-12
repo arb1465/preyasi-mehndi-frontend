@@ -8,6 +8,7 @@ import AdminDashboard from './components/AdminDashboard';
 import ManageReviewsPage from './components/ManageReviews';
 import ManageBookings from './components/ManageBookings';
 import AddGalleryImage from './components/AddGalleryImage';
+import ManageGallery from './components/ManageGallery';
 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -35,6 +36,8 @@ function App() {
           <Route path="/admin-ak47/manage-reviews" element={<ManageReviewsPage />} />
 
           <Route path="/admin-ak47/manage-bookings" element={<ManageBookings />} />
+          
+          <Route path="/admin-ak47/manage-gallery" element={<ManageGallery />} />
 
           <Route path="/admin-ak47/add-gallery-image" element={<AddGalleryImage />} />
 
