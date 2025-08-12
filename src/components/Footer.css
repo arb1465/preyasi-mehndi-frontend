@@ -2,8 +2,9 @@
 .main-footer {
   background-color: #c57d56; /* Dark brownish-orange from design */
   color: #fdf5f0; /* Light text color */
-  padding: 60px 0 40px 0;
+  padding: 60px 0 15px 0;
   font-family: serif;
+  margin-top: 50px;
 }
 
 .footer-column {
@@ -115,7 +116,7 @@
     }
 
     /* Adjust the font size of the main brand name for mobile */
-    .footer-brand-name {
+    .footer-brand-link {
         font-size: 2rem; /* Make it slightly smaller */
     }
 

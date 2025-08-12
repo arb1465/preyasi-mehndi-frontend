@@ -127,7 +127,7 @@ function AddReviewPage() {
             </div>
 
             <div className="col-6 mb-4">
-              <label htmlFor="photo" className="form-label">Photo</label>
+              <label htmlFor="photo" className="form-label">Photo (Photo of Mehndi)</label>
               <div className="file-upload-wrapper">
                 <input type="file" id="photo" name="photo" className="file-upload-input" onChange={handlePhotoChange} accept="image/*" />
                 <label htmlFor="photo" className="file-upload-label">Choose File</label>

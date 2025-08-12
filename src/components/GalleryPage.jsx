@@ -58,11 +58,13 @@ function GalleryPage() {
     <div className="gallery-page-container section-bg">
       <div className="container">
         <div className="gallery-header">
-          <h1 className="gallery-main-title">Preyasi Mehndi</h1>
+          <h1 className="gallery-main-title">Preyasi Mehndi Art Gallery</h1>
           <div className="filter-buttons">
             <button className={`filter-btn ${activeFilter === 'all' ? 'active' : ''}`} onClick={() => setActiveFilter('all')}>All</button>
-            <button className={`filter-btn ${activeFilter === 'hand' ? 'active' : ''}`} onClick={() => setActiveFilter('hand')}>Hand</button>
-            <button className={`filter-btn ${activeFilter === 'feet' ? 'active' : ''}`} onClick={() => setActiveFilter('feet')}>Feet</button>
+            <button className={`filter-btn ${activeFilter === 'bridal' ? 'active' : ''}`} onClick={() => setActiveFilter('bridal')}>Bridal</button>
+            <button className={`filter-btn ${activeFilter === 'engagement' ? 'active' : ''}`} onClick={() => setActiveFilter('engagement')}>Engagement</button>
+            <button className={`filter-btn ${activeFilter === 'simple' ? 'active' : ''}`} onClick={() => setActiveFilter('simple')}>Simple</button>
+            <button className={`filter-btn ${activeFilter === 'stylish' ? 'active' : ''}`} onClick={() => setActiveFilter('stylish')}>Stylish</button>
           </div>
         </div>
 
@@ -82,7 +84,7 @@ function GalleryPage() {
               </div>
             ))
           ) : (
-            <p>No images found in the gallery.</p>
+            <p>No images found for this category.</p>
           )}
         </div>
       </div>

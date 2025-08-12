@@ -174,9 +174,11 @@ function ManageReviewsPage() {
                             <div className="form-group">
                                 <label htmlFor="category">Select Category:</label>
                                 <select id="category" value={galleryCategory} onChange={e => setGalleryCategory(e.target.value)}>
-                                    <option value="hand">All</option>
-                                    <option value="hand">Hand</option>
-                                    <option value="feet">Feet</option>
+                                    <option value="all">All</option>
+                                    <option value="bridal">Bridal</option>
+                                    <option value="engagement">Engagement</option>
+                                    <option value="stylish">Stylish</option>
+                                    <option value="simple">Simple</option>
                                 </select>
                             </div>
                             <div className="modal-actions">

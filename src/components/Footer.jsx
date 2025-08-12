@@ -60,7 +60,7 @@ function Footer() {
       
       <div className="copyright-bar">
         <p>© Copyright Preyasi Mehendi | Designed by &nbsp;
-          <a href="https://instagram.com/arb_1465/" target="_blank" rel="noopener noreferrer">Aasutosh Baraiya</a>
+          <a href="https://portfolio-arb.vercel.app" target="_blank" rel="noopener noreferrer">Aasutosh Baraiya</a>
         </p>
       </div>
     </footer>

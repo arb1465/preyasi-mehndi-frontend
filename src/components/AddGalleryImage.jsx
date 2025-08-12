@@ -92,14 +92,16 @@ function AddGalleryImage() {
                     <label htmlFor="category">Category</label>
                     <select id="category" value={category} onChange={e => setCategory(e.target.value)} required>
                         <option value="all">Other</option>
-                        <option value="hand">Hand</option>
-                        <option value="feet">Feet</option>
+                        <option value="bridal">Bridal</option>
+                        <option value="engagement">Engagement</option>
+                        <option value="simple">Simple</option>
+                        <option value="stylish">Stylish</option>
                     </select>
                 </div>
 
                 <div className="form-group">
                     <label htmlFor="altText">Alt Text (Description for SEO)</label>
-                    <input type="text" id="altText" value={altText} onChange={e => setAltText(e.target.value)} placeholder="e.g., Intricate bridal design on hand" required/>
+                    <input type="text" id="altText" value={altText} onChange={e => setAltText(e.target.value)} placeholder="e.g., Intricate bridal design on hand" />
                 </div>
 
                 <button type="submit" className="btn-submit" disabled={isSubmitting}>
