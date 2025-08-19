@@ -3,15 +3,16 @@
     padding: 100px 20px;
     margin: 0 auto;
 
-  background-color: #fceee4;
-  background-image: url('../assets/bg-4.jpg');
+    background-color: #fceee4;
+    background-image: url('../assets/bg-4.jpg');
 
-  background-repeat: no-repeat;
-  background-position: center center;
+    background-repeat: no-repeat;
+    background-position: center center;
 
-  background-size: cover;
-  background-attachment: fixed;
+    background-size: cover;
+    background-attachment: fixed;
 
+    max-width: 1700px;
 }
 .page-title {
     /* font-family: serif; */
@@ -25,7 +26,6 @@
     margin-bottom: 20px;
 }
 .table-responsive {
-    
     overflow-x: auto; /* Ensures table is scrollable on small screens */
 }
 table {
@@ -73,14 +73,50 @@ tr:hover {
     background-color: #d74c4c;
 }
 
-#photoHere{
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 5px;
-}
-
 .page-title-link{
     text-decoration: none;
     color: #1d1d1d;
+}
+
+/* --- DELETE your old #photoHere styles --- */
+/* --- ADD this new class-based style --- */
+
+.gallery-thumbnail {
+    /* Set the size for desktop */
+    width: 150px;
+    height: 150px;
+    
+    /* This is the key: it tells the image how to fit into the box */
+    object-fit: cover; 
+    
+    /* Other styling */
+    border-radius: 8px; /* A slightly more rounded corner */
+    display: block; /* Helps prevent extra space below the image */
+}
+
+
+/* --- Media query for smaller screens --- */
+@media (max-width: 767.98px) {
+    .gallery-thumbnail {
+        /* Make the thumbnail smaller on mobile to save space */
+        width: 100px;
+        height: 100px;
+    }
+
+    /* Optional: reduce padding on mobile table cells */
+    td, th {
+        padding: 12px 8px;
+    }
+
+    .btn-add{
+        padding: 5px 10px;
+        border-radius: 3.5px;
+        font-size: 0.7rem;
+    }
+
+    .btn-remove{
+        padding: 5px 10px;
+        border-radius: 3.5px;
+        font-size: 0.7rem;
+    }
 }

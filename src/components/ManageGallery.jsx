@@ -72,9 +72,9 @@ function ManageGallery() {
                 <table>
                     <thead>
                         <tr>
-                            <th>Photo</th>
                             <th>Category</th>
                             <th>Text</th>
+                            <th>Photo</th>
                             <th>Action</th>
                         </tr>
                     </thead>
@@ -82,16 +82,16 @@ function ManageGallery() {
                         {galleryImages.length > 0 ? (
                             galleryImages.map(img => (
                                 <tr key={img._id}>
+                                    <td>{img.category}</td>
+                                    <td>{img.altText}</td>
                                     <td>
                                         <img
                                             src={img.imageUrl}
                                             alt={img.altText}
-                                            className="img-fluid gallery-image"
+                                            className="gallery-thumbnail"
                                             id='photoHere'
                                         />
                                     </td>
-                                    <td>{img.category}</td>
-                                    <td>{img.altText}</td>
                                     <td>
                                         {img.isOnGallery === true ? (
                                             <button 
