@@ -29,6 +29,7 @@
 .table-responsive {
     overflow-x: auto; /* Ensures table is scrollable on small screens */
 }
+
 table {
     border-collapse: collapse;
     background-color: #fff;
@@ -47,6 +48,7 @@ th {
 tr:hover {
     background-color: #f9f9f9;
 }
+
 .btn-delete {
     padding: 8px 15px;
     border: none;

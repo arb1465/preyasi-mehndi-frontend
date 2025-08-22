@@ -95,7 +95,6 @@ tr:hover {
 }
 
 
-/* --- Media query for smaller screens --- */
 @media (max-width: 767.98px) {
     .gallery-thumbnail {
         /* Make the thumbnail smaller on mobile to save space */
