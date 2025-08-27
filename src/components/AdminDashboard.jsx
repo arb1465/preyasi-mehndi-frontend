@@ -77,6 +77,9 @@ function AdminDashboard() {
                     <Link to="/admin-ak47/manage-gallery" className="nav-button">
                         Manage Gallery
                     </Link>
+                    <Link to="/admin-ak47/ai-designer" className="nav-button">
+                       Generate Image
+                    </Link>
                 </div>
             </div>
         </div>

@@ -1,0 +1,93 @@
+/* src/components/AIPage.css */
+.ai-page-container {
+    padding: 100px 20px;
+    min-height: 100vh;
+    text-align: center;
+    background-color: #fceee4;
+    background-image: url('../assets/bg-4.jpg');
+
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    background-size: cover;
+    background-attachment: fixed;
+
+    max-width: 1700px;
+}
+.page-title { /* Reusing your existing class */
+    /* font-family: serif; */
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+.ai-header { margin-bottom: 40px; }
+.ai-subtitle { font-size: 1.2rem; color: #555; margin-top: -20px; }
+.ai-controls button {
+    background-color: #c57d56;
+    color: #fff;
+    border: none;
+    padding: 18px 45px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.ai-controls button:hover:not(:disabled) {
+    background-color: #a96740;
+    transform: translateY(-3px);
+}
+.ai-controls button:disabled { background-color: #ccc; cursor: not-allowed; }
+.ai-image-area {
+    margin-top: 50px;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
+    padding: 20px;
+}
+.image-wrapper { display: flex; flex-direction: column; align-items: center; gap: 20px; }
+.generated-image {
+    max-width: 100%;
+    max-height: 500px;
+    border-radius: 8px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+}
+.btn-download {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.btn-download:hover { background-color: #218838; }
+.spinner {
+    width: 60px;
+    height: 60px;
+    border: 7px solid rgba(0, 0, 0, 0.1);
+    border-top-color: #c57d56;
+    border-radius: 50%;
+    animation: spin 1s ease-in-out infinite;
+}
+.error-message { color: #dc3545; font-size: 1.1rem; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+
+@media (max-width: 767.98px) {
+    .btn-download {
+        padding: 9px 20px;
+        border-radius: 8px;
+        font-size: 0.7rem;
+    }
+
+    .ai-controls button {
+        padding: 15px 25px;
+        border-radius: 8px;
+        font-size: 0.9rem;
+    }
+}
