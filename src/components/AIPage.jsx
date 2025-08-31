@@ -17,13 +17,21 @@ function AIPage() {
 
         const token = localStorage.getItem('admin_token');
 
+        if (!token) {
+        setError("Authentication error. Please log in again.");
+        setIsLoading(false);
+
+        return; // Stop the function here
+    }
+
         try {
             // Call the new, protected admin endpoint
             const response = await fetch(`${apiUrl}/admin-ak47/ai-designer/generate`, {
                 method: 'POST',
                 headers: {
                     'Authorization': `Bearer ${token}`
-                }
+                },
+                body: JSON.stringify({ prompt })
             });
 
             const result = await response.json();
@@ -37,7 +45,7 @@ function AIPage() {
         } 
         catch (err) {
             setError(err.message);
-        } 
+        }
         finally {
             setIsLoading(false);
         }
