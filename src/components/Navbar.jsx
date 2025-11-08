@@ -84,7 +84,7 @@ function Navbar() {
                         </li> 
 
                         <li className="nav-item">
-                            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" onClick={handleLinkClick}>
+                            <a href="https://www.instagram.com/preyasi_mehndi_art" target="_blank" rel="noopener noreferrer" onClick={handleLinkClick}>
                                 <img src={instaLogo} alt="Instagram" className="insta-logo" />
                             </a>
                         </li>
