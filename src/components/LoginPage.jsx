@@ -7,6 +7,7 @@ const apiUrl = process.env.REACT_APP_API_URL;
 function LoginPage() {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
+    const [showPassword, setShowPassword] = useState(false);
 
     const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState('');
@@ -33,12 +34,8 @@ function LoginPage() {
                 throw new Error(data.error || 'Login failed. Please try again.');
             }
 
-            // --- LOGIN SUCCESSFUL ---
-            // 1. Save the token to the browser's local storage.
-            // This allows us to stay logged in even after refreshing the page.
             localStorage.setItem('admin_token', data.token);
 
-            // 2. Redirect the user to the admin dashboard.
             navigate('/admin-ak47/dashboard');
 
         } 
@@ -74,14 +71,24 @@ function LoginPage() {
 
                     <div className="form-group">
                         <label htmlFor="password">Password</label>
-                        <input
-                            type="text"
-                            id="password"
-                            className="form-control"
-                            value={password}
-                            onChange={(e) => setPassword(e.target.value)}
-                            required
-                        />
+      
+                        <div>
+                            <input
+                                type={showPassword ? "text" : "password"}
+                                id="password"
+                                className="form-control"
+                                value={password}
+                                onChange={(e) => setPassword(e.target.value)}
+                                required
+                            />
+                            <button
+                                type="button"
+                                className="toggle-eye"
+                                onClick={() => setShowPassword(!showPassword)}
+                            >
+                                {showPassword ? "🙈" : "👁️"}
+                            </button>
+                        </div>
                     </div>
                     
                     {error && <p className="error-message">{error}</p>}

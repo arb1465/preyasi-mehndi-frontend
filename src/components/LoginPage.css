@@ -42,20 +42,6 @@
     margin-top: 20px;
 }
 
-.login-form .form-group {
-    margin: 35px;
-}
-
-.login-form .form-control {
-    width: 100%;
-    padding: 15px;
-    font-size: 1rem;
-    border: none;
-    border-radius: 8px;
-    background-color: #fca972;
-    color: #1d1d1d;
-}
-
 .login-form .form-control:focus {
     outline: none;
     box-shadow: 0 0 0 3px rgba(197, 125, 86, 0.5);
@@ -89,4 +75,27 @@
     text-align: center;
     margin-top: -10px;
     margin-bottom: 15px;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 35px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f7b37b;
+}
+
+.toggle-eye {
+  position: absolute;
+  right: 15px;
+  top: 68%;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+  cursor: pointer;
 }

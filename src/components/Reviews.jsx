@@ -37,9 +37,6 @@ function Reviews() {
                 ) : (
                     <div className="row">
                         {reviews.length > 0 ? (
-                            // --- THIS IS THE KEY ---
-                            // We use .slice(0, 4) to create a new array containing only the first 4 items.
-                            // We then map over this shorter array.
                             reviews.slice(0, 4).map(review => (
                                 <div className="col-lg-3 col-md-6 mb-4" key={review._id}>
                                     <div className="review-card">
