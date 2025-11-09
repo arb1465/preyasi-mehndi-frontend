@@ -29,6 +29,7 @@ function AIPage() {
             const response = await fetch(`${apiUrl}/admin-ak47/ai-designer/generate`, {
                 method: 'POST',
                 headers: {
+                    "Content-Type": "application/json",
                     'Authorization': `Bearer ${token}`
                 },
                 body: JSON.stringify({ prompt })
